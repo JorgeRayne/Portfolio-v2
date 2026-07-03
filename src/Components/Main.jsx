@@ -1,5 +1,6 @@
 import React from 'react'
 import main from '../assets/main.png'
+import IconList from './IconList'
 
 function Main() {
   return (
@@ -11,6 +12,9 @@ function Main() {
             <div className='flex justify-center items-start flex-col bg-blue-300 w-max p-5'>
                 <div className='text-7xl font-extrabold'>Jorge Rayne</div>
                 <div className='text-6xl font-extrabold'>Fullstack Dev</div>
+                <div>
+                    <IconList/>
+                </div>
             </div>
         </div>
     </div>

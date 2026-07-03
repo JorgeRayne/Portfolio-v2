@@ -9,7 +9,7 @@ function App() {
         <div className='bg-red-500 flex justify-between items-center py-4 px-1 bg-transparent bg-opacity-40'>
           <div className='w-full flex justify-start pl-24'>
             <h1>
-              {'</Jorge>'}
+              {'Jorge/'}
             </h1>
           </div>
           {/* <div className='w-full'>
