@@ -4,7 +4,7 @@ import Main from './Components/Main'
 function App() {
 
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-screen relative bg-background'>
       <div className='fixed top-4 left-4 right-4'>
         <div className='bg-red-500 flex justify-between items-center py-4 px-1 bg-transparent bg-opacity-40'>
           <div className='w-full flex justify-start pl-24'>
@@ -12,9 +12,6 @@ function App() {
               {'Jorge/'}
             </h1>
           </div>
-          {/* <div className='w-full'>
-            <a href="#">Download CV</a>
-          </div> */}
           <Header/>
       </div>
       </div>
