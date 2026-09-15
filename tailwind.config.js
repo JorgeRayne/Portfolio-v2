@@ -45,7 +45,7 @@ export default {
       },
 
       animation: {
-        morph: "morph 8s ease-in-out infinite",
+        morph: "morph 3s ease-in-out infinite",
       },
 
     },
