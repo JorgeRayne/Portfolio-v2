@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './Components/Header'
 import Main from './Components/Main'
 import About from './Components/About'
+import Expreince from './Components/Expreince'
 function App() {
 
   return (
@@ -24,6 +25,9 @@ function App() {
           <About/>
         </section>
         <section id='project' className='w-full'>
+          <Expreince/>
+        </section>
+        <section id='exprience' className='w-full'>
           <Main></Main>
         </section>
       </div>

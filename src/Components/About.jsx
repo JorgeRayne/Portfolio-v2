@@ -3,8 +3,8 @@ import React from 'react'
 function About() {
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background'>
-        <div className='flex justify-evenly items-center flex-col w-[80vw] h-[70vh] border border-white'>
-            <div className='text-4xl font-bold text-text'>
+        <div className='flex justify-between items-center flex-col w-[80vw] h-[70vh] bg-red-300 '>
+            <div className='text-4xl font-bold text-text mt-10'>
               ABOUT<span className='text-primary font-bold'>.</span>
             </div>
             <div className='overflow-hidden flex justify-around items-center h-[80%] '>
