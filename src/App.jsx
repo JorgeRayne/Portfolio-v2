@@ -10,8 +10,8 @@ function App() {
       <div className='fixed top-4 left-4 right-4 z-50'>
         <div className='bg-red-500 flex justify-between items-center py-4 px-1 bg-transparent bg-opacity-40'>
           <div className='w-full flex justify-start items-center pl-24'>
-            <h1 className='text-8xl font-bold font-heading text-text'>
-              {'Jorge/'}
+            <h1 className='text-6xl font-bold font-heading text-text'>
+              Jorge <span className='text-primary'>/</span>
             </h1>
           </div>
           <Header/>
