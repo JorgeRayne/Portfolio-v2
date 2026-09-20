@@ -2,10 +2,10 @@ import { useRef, useEffect } from 'react';
 import './ShapeGrid.css';
 
 const ShapeGrid = ({
-  direction = 'right',
-  speed = 1,
+  direction = null,
+  speed = 0,
   borderColor = '#999',
-  squareSize = 40,
+  squareSize = 85,
   hoverFillColor = '#222',
   shape = 'square',
   hoverTrailAmount = 0,
