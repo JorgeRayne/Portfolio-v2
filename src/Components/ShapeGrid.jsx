@@ -2,8 +2,8 @@ import { useRef, useEffect } from 'react';
 import './ShapeGrid.css';
 
 const ShapeGrid = ({
-  direction = null,
-  speed = 0,
+  direction = 'right',
+  speed = 0.5,
   borderColor = '#999',
   squareSize = 85,
   hoverFillColor = '#222',
