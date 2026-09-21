@@ -15,7 +15,7 @@ function Main() {
                     [mask-composite:intersect]
                 "
                 >
-                <ShapeGrid className="absolute" />
+                <ShapeGrid className="absolute opacity-40" />
             </div>
 
             <div className='flex justify-around items-center z-10'>
