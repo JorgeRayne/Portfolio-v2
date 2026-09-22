@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         background: "#0F111A",
+        "pale-background": "#141622",
         card: "#171B27",
         surface: "#1D2333",
 
