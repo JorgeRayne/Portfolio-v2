@@ -6,29 +6,6 @@ function About() {
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background p-10'>
         <div className='h-full w-full p-20'>
-            {/* <div className='text-4xl font-bold text-text mt-10'>
-              ABOUT<span className='text-primary font-bold'>.</span>
-            </div>
-            <div className='overflow-hidden flex justify-around items-center h-[80%] '>
-              <div className='h-full w-[50%] flex justify-center items-center'>
-                <div className='w-[70%] h-80 bg-primary'></div>
-              </div>
-              <div className='text-lg font-semibold text-text w-[50%]'>
-                <div>
-                  <span className='font-bold'>Web Developer</span> transitioning to a career in technology.
-                </div>
-                <div>
-                  Currently, my focus is on learning and mastering essetials web development skills. I have a solid foundation in <span className='font-bold'>HTML</span>, <span className='font-bold'>CSS</span>, <span className='font-bold'>GIT</span> and <span className='font-bold'>JAVASCRIPT</span>
-                </div>
-                <div>
-                  Currently, my focus in on learning and mastering essetials web development skills. I have a solid foundation
-                </div>
-              </div>
-            </div> */}
-
-
-
-            {/* object-cover object-center */}
             <div className="
               w-full
               h-full
@@ -49,18 +26,18 @@ function About() {
               <div className='[grid-area:ben2] w-full overflow-hidden rounded-3xl border border-white/[0.1] bg-background'>
                 <img src={main} className='w-full h-full object-cover object-buttom opacity-10' alt="" />
               </div>
-              <div className='[grid-area:ben3] w-full rounded-3xl bg-card border border-white/[0.1] text-white'>
+              <div className='[grid-area:ben3] w-full rounded-3xl bg-card border border-white/[0.1] text-white relative'>
                 <div
                     className=" w-full h-full
                         [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
                         [mask-composite:intersect]
                     "
                     >
-                    <ShapeGrid className="absolute opacity-60 w-fit" direction={null} />
+                    <ShapeGrid className="absolute opacity-60 w-full overflow-hidden" direction={null} />
                   </div>
               </div>
-              <div className='[grid-area:ben4] bg-card w-full overflow-hidden rounded-3xl'>
-                <div className='text-text text-lg lg-text-3xl text-center w-full h-full'>
+              <div className='[grid-area:ben4] border-white/[2] bg-card w-full rounded-3xl flex justify-center items-center'>
+                <div className='text-text text-lg lg-text-3xl text-center'>
                   Dowload CV
                 </div>
               </div>

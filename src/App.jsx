@@ -27,9 +27,6 @@ function App() {
         <section id='project' className='w-full'>
           <Expreince/>
         </section>
-        <section id='exprience' className='w-full'>
-          <Main></Main>
-        </section>
       </div>
     </div>
   )

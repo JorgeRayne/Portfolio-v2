@@ -6,11 +6,12 @@ import ShapeGrid from './ShapeGrid'
 function Main() {
   return (
     <div className='w-full h-screen bg-background flex justify-center items-center'>
-        <div className='w-full flex justify-around items-center  h-[70%] relative'>
+        <div className='w-full flex justify-around items-center  h-[100%] relative'>
 
             <div
                 className="
-                    absolute w-full h-[90%]
+                    absolute w-full h-[80%]
+                    bottom-0
                     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
                     [mask-composite:intersect]
                 "
