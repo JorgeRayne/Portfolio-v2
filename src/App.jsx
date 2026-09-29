@@ -16,9 +16,9 @@ function App() {
             shadow-[0_8px_30px_rgba(0,0,0,0.15)]
         '>
           <div className='w-full flex justify-start items-center pl-20'>
-            <h1 className='text-6xl font-bold font-heading text-text'>
-              Jorge <span className='text-primary'>/</span>
-            </h1>
+            <div className='text-4xl font-semibold font-mono text-text'>
+              JORGE<span className='text-primary'>/</span>
+            </div>
           </div>
           <Header/>
         </div>

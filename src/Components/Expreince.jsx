@@ -6,7 +6,7 @@ function Expreince() {
     <div className='w-full h-screen flex justify-center items-center p-20 bg-background'>
         <div className='w-full h-full flex justify-evenly items-center flex-col overflow-hidden'>
 
-            <div className='text-4xl font-bold text-text mt-10'>
+            <div className='text-4xl font-bold text-text mt-10 font-mono'>
               Experience<span className='text-primary font-bold'>.</span>
             </div>
             {/* exprience component */}

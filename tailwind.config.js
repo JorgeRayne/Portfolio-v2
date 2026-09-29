@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['"JetBrains Mono"', "monospace"],
+      },
       colors: {
         background: "#0F111A",
         "pale-background": "#141622",

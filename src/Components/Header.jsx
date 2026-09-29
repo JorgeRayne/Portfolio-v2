@@ -7,7 +7,7 @@ export default function Header() {
     ]
 
     return (
-        <div className="flex gap-10 w-full justify-center items-center mr-10">
+        <div className="flex gap-20 w-full justify-center items-center">
             {links.map(((link, index) => (
                 <NavLinks key={index} linkTitle={link}/>
             )))}

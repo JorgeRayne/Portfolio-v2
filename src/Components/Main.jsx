@@ -10,7 +10,7 @@ function Main() {
 
             <div
                 className="
-                    absolute w-full h-[80%]
+                    absolute w-full h-[90%]
                     bottom-0
                     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
                     [mask-composite:intersect]
@@ -27,8 +27,8 @@ function Main() {
                 </div>
             </div>
             <div className='flex justify-center items-start flex-col w-max p-5'>
-                <h2 className='text-8xl font-extrabold text-primary font-heading'>Jorge Rayne</h2>
-                <div className='text-6xl font-heading font-extrabold bg-gradient-to-r from-text to-transparent inline-block text-transparent bg-clip-text'>Fullstack Dev</div>
+                <h2 className='text-8xl font-extrabold text-primary font-heading font-mono'>Jorge Rayne</h2>
+                <div className='text-6xl font-heading font-extrabold bg-gradient-to-r from-text to-transparent inline-block text-transparent bg-clip-text font-mono'>Fullstack Dev</div>
                 <div>
                     <IconList/>
                 </div>
