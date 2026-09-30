@@ -1,17 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import main from '../assets/laptop.jfif'
 import ShapeGrid from './ShapeGrid'
-import cssIcon from "../assets/Icons/css-3.svg";
-import gitIcon from "../assets/Icons/git.svg";
-import htmlIcon from "../assets/Icons/html-5.svg";
-import jsIcon from "../assets/Icons/js.svg";
-import laravelIcon from "../assets/Icons/laravel.svg";
-import npmIcon from "../assets/Icons/npm.svg";
-import phpIcon from "../assets/Icons/php.svg";
-import pythonIcon from "../assets/Icons/python.svg";
-import reactIcon from "../assets/Icons/react.svg";
+import TechNav from './TechNav';
+import Backend from './layouts/techlayouts/Backend';
+import Frontend from './layouts/techlayouts/Frontend';
+import Tools from './layouts/techlayouts/Tools';
 
 function About() {
+  const [category, setCategory] = useState('backend');
+
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background p-10'>
         <div className='h-full w-full p-20'>
@@ -46,72 +43,12 @@ function About() {
                   <ShapeGrid className="absolute w-full overflow-hidden opacity-10" direction={'left'} />
                 </div>
                 <div className='flex justify-between items-center flex-col gap-4 relative w-full h-full z-10'>
-                  <div className='flex justify-center items-center w-full h-11 px-10 bg-pale-background rounded-t-3xl'>
+                  <div className='flex justify-center items-center w-full h-11 px-10 py-6 bg-pale-background rounded-t-3xl'>
                     <div className='flex-1 font-mono font-medium text-2xl'>Tech</div>
-                    <nav>
-                      <ul className='flex justify-center items-center gap-8 font-mono font-medium'>
-                        <li className='py-4 px-2 '>
-                          BACKEND
-                        </li>
-                        <li>
-                          FRONTEND
-                        </li>
-                        <li>
-                          TOOLS
-                        </li>
-                      </ul>
-                    </nav>
+                    <TechNav setCategory={setCategory}/>
                   </div>
                   <div className='flex items-center justify-center flex-wrap gap-10 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4'>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    <div>
-                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
-                        <img src={cssIcon} alt="" className='w-10'/>
-                        <p className='font-mono'>css</p>
-                      </div>
-                    </div>
-                    
+                    {category === 'backend' ? <Backend></Backend> : category === 'frontend' ? <Frontend></Frontend> : <Tools></Tools>}
                   </div>
                 </div>
               </div>
