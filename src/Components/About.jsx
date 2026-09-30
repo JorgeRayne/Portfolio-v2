@@ -1,6 +1,15 @@
 import React from 'react'
 import main from '../assets/laptop.jfif'
 import ShapeGrid from './ShapeGrid'
+import cssIcon from "../assets/Icons/css-3.svg";
+import gitIcon from "../assets/Icons/git.svg";
+import htmlIcon from "../assets/Icons/html-5.svg";
+import jsIcon from "../assets/Icons/js.svg";
+import laravelIcon from "../assets/Icons/laravel.svg";
+import npmIcon from "../assets/Icons/npm.svg";
+import phpIcon from "../assets/Icons/php.svg";
+import pythonIcon from "../assets/Icons/python.svg";
+import reactIcon from "../assets/Icons/react.svg";
 
 function About() {
   return (
@@ -28,13 +37,83 @@ function About() {
               </div>
               <div className='[grid-area:ben3] w-full rounded-3xl bg-card border border-white/[0.1] text-white relative'>
                 <div
-                    className=" w-full h-full
-                        [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
-                        [mask-composite:intersect]
-                    "
-                    >
-                    <ShapeGrid className="absolute opacity-60 w-full overflow-hidden" direction={null} />
+                  className=" w-full h-full
+                      [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
+                      [mask-composite:intersect]
+                      absolute 
+                  "
+                  >
+                  <ShapeGrid className="absolute w-full overflow-hidden opacity-10" direction={'left'} />
+                </div>
+                <div className='flex justify-between items-center flex-col gap-4 relative w-full h-full z-10'>
+                  <div className='flex justify-center items-center w-full h-11 px-10 bg-pale-background rounded-t-3xl'>
+                    <div className='flex-1 font-mono font-medium text-2xl'>Tech</div>
+                    <nav>
+                      <ul className='flex justify-center items-center gap-8 font-mono font-medium'>
+                        <li className='py-4 px-2 '>
+                          BACKEND
+                        </li>
+                        <li>
+                          FRONTEND
+                        </li>
+                        <li>
+                          TOOLS
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
+                  <div className='flex items-center justify-center flex-wrap gap-10 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4'>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div className='bg-card py-2 px-8 flex justify-center items-center flex-col rounded-3xl border border-white/[0.1]'>
+                        <img src={cssIcon} alt="" className='w-10'/>
+                        <p className='font-mono'>css</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
               <div className='[grid-area:ben4] border-white/[2] bg-card w-full rounded-3xl flex justify-center items-center'>
                 <div className='text-text text-lg lg-text-3xl text-center'>
