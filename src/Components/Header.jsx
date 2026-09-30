@@ -3,7 +3,7 @@ import NavLinks from "./Navlinks"
 export default function Header() {
 
     const links = [
-        'Home', 'About', 'Project', 'Experience', 'Projects'
+        'Home', 'About', 'Experience', 'Project', 'Projects'
     ]
 
     return (
