@@ -3,11 +3,11 @@ import NavLinks from "./Navlinks"
 export default function Header() {
 
     const links = [
-        'Home', 'About', 'Project', 'Experience', 'Projects'
+        'Home', 'About', 'Experience', 'Project', 'Projects'
     ]
 
     return (
-        <div className="flex gap-5 w-full justify-evenly items-center mr-10">
+        <div className="flex gap-20 w-full justify-center items-center">
             {links.map(((link, index) => (
                 <NavLinks key={index} linkTitle={link}/>
             )))}

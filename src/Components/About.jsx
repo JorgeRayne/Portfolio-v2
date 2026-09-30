@@ -17,8 +17,8 @@ function About() {
             ">
               <div className='[grid-area:ben1] overflow-hidden rounded-3xl bg-card border border-white/[0.1]'>
                 <div className='justify-end group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5 lg:p-10'>
-                  <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10"></div>
-                  <div className="font-sans text-text text-lg lg:text-3xl max-w-96 font-bold z-10">
+                  <div className="font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10"></div>
+                  <div className="text-text text-lg lg:text-3xl max-w-96 font-meduim z-10 font-mono">
                     Developer building clean, reliable cloud, fintech systems
                   </div>
                 </div>
