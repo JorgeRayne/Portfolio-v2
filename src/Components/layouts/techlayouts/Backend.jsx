@@ -1,27 +1,33 @@
 import React from 'react'
-import cssIcon from "../../../assets/Icons/css-3.svg";
-import gitIcon from "../../../assets/Icons/git.svg";
-import htmlIcon from "../../../assets/Icons/html-5.svg";
-import jsIcon from "../../../assets/Icons/js.svg";
-import laravelIcon from "../../../assets/Icons/laravel.svg";
-import npmIcon from "../../../assets/Icons/npm.svg";
-import phpIcon from "../../../assets/Icons/php.svg";
-import pythonIcon from "../../../assets/Icons/python.svg";
-import reactIcon from "../../../assets/Icons/react.svg";
 import TechIcon from '@/Components/TechIcon';
+import html from '../../../assets/Icons/html-5.svg';
+import css from '../../../assets/Icons/css-3.svg';
+import js from '../../../assets/Icons/js.svg';
+import python from '../../../assets/Icons/python.svg';
+import node from '../../../assets/Icons/node-js-svgrepo-com.svg';
+import npm from '../../../assets/Icons/npm.svg';
+import react from '../../../assets/Icons/react.svg';
+import laravel from '../../../assets/Icons/laravel.svg';
+import inertia from '../../../assets/Icons/inertia.svg';
+import composer from '../../../assets/Icons/composer-svgrepo-com.svg';
+import ts from '../../../assets/Icons/typescript-icon-svgrepo-com.svg';
+import sql from '../../../assets/Icons/sql-svgrepo-com.svg';
 
 function Backend() {
     const techs = [
-        {icon: cssIcon,label: "BACKEND",},
-        {icon: gitIcon,label: "Git",},
-        {icon: htmlIcon,label: "HTML",},
-        {icon: jsIcon,label: "JavaScript",},
-        {icon: laravelIcon,label: "Laravel",},
-        {icon: npmIcon,label: "NPM",},
-        {icon: phpIcon,label: "PHP",},
-        {icon: pythonIcon,label: "Python",},
-        {icon: reactIcon,label: "React",},
-    ]
+        { icon: html, label: 'HTML' },
+        { icon: css, label: 'CSS' },
+        { icon: js, label: 'JavaScript' },
+        { icon: python, label: 'Python' },
+        { icon: node, label: 'Node.js' },
+        { icon: npm, label: 'NPM' },
+        { icon: react, label: 'React' },
+        { icon: laravel, label: 'Laravel' },
+        { icon: inertia, label: 'Inertia' },
+        { icon: composer, label: 'Composer' },
+        { icon: ts, label: 'TypeScript' },
+        { icon: sql, label: 'SQL' },
+    ];
 
     return (
         <>

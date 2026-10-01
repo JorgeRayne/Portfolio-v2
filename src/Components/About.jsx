@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import main from '../assets/laptop.jfif'
 import ShapeGrid from './ShapeGrid'
 import TechNav from './TechNav';
@@ -7,7 +7,7 @@ import Frontend from './layouts/techlayouts/Frontend';
 import Tools from './layouts/techlayouts/Tools';
 
 function About() {
-  const [category, setCategory] = useState('backend');
+  const [category, setCategory] = useState('tech');
 
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background p-10'>
@@ -44,11 +44,11 @@ function About() {
                 </div>
                 <div className='flex justify-between items-center flex-col gap-4 relative w-full h-full z-10'>
                   <div className='flex justify-center items-center w-full h-11 px-10 py-6 bg-pale-background rounded-t-3xl'>
-                    <div className='flex-1 font-mono font-medium text-2xl'>Tech</div>
-                    <TechNav setCategory={setCategory}/>
+                    <div className='flex-1 font-mono font-medium text-2xl'></div>
+                    <TechNav category={category} setCategory={setCategory} />
                   </div>
-                  <div className='flex items-center justify-center flex-wrap gap-10 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4'>
-                    {category === 'backend' ? <Backend></Backend> : category === 'frontend' ? <Frontend></Frontend> : <Tools></Tools>}
+                  <div className='grid grid-cols-6 gap-3 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4'>
+                    {category === 'tech' ? <Backend></Backend> : <Tools></Tools>}
                   </div>
                 </div>
               </div>
