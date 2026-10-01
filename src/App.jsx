@@ -9,7 +9,7 @@ function App() {
     <div className='w-full h-screen relative bg-background scroll-smooth'>
       <div className='fixed top-4 w-full z-50 px-4'>
         <div className='w-full h-full flex justify-between items-center py-4 px-6
-          bg-background/60
+          bg-background/20
             backdrop-blur-[8px]
             border border-white/10
             rounded-2xl
@@ -24,7 +24,7 @@ function App() {
         </div>
       </div>
       <div className='flex items-center justify-center flex-col'>
-        <section id='home' className='w-full bg-red-400'>
+        <section id='home' className='w-full'>
           <Main></Main>
         </section>
         <section id='about' className='w-full'>
