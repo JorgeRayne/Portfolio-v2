@@ -7,7 +7,7 @@ import Frontend from './layouts/techlayouts/Frontend';
 import Tools from './layouts/techlayouts/Tools';
 
 function About() {
-  const [category, setCategory] = useState('tech');
+  const [category, setCategory] = useState('stack');
 
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background p-10'>
@@ -47,12 +47,12 @@ function About() {
                     <div className='flex-1 font-mono font-medium text-2xl'></div>
                     <TechNav category={category} setCategory={setCategory} />
                   </div>
-                  <div className='grid grid-cols-6 gap-3 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4'>
-                    {category === 'tech' ? <Backend></Backend> : <Tools></Tools>}
+                  <div className={`grid ${category == 'stack' ? 'grid-cols-6' : 'grid-cols-3'} gap-3 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4`}>
+                    {category === 'stack' ? <Backend></Backend> : <Tools></Tools>}
                   </div>
                 </div>
               </div>
-              <div className='[grid-area:ben4] border-white/[2] bg-card w-full rounded-3xl flex justify-center items-center'>
+              <div className='[grid-area:ben4] border border-white/[0.1] bg-card w-full rounded-3xl flex justify-center items-center'>
                 <div className='text-text text-lg lg-text-3xl text-center'>
                   Dowload CV
                 </div>

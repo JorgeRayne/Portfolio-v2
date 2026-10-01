@@ -1,26 +1,19 @@
 import React from 'react'
-import cssIcon from "../../../assets/Icons/css-3.svg";
-import gitIcon from "../../../assets/Icons/git.svg";
-import htmlIcon from "../../../assets/Icons/html-5.svg";
-import jsIcon from "../../../assets/Icons/js.svg";
-import laravelIcon from "../../../assets/Icons/laravel.svg";
-import npmIcon from "../../../assets/Icons/npm.svg";
-import phpIcon from "../../../assets/Icons/php.svg";
-import pythonIcon from "../../../assets/Icons/python.svg";
-import reactIcon from "../../../assets/Icons/react.svg";
 import TechIcon from '@/Components/TechIcon';
+import github from '../../../assets/Icons/git.svg';
+import gitbash from '../../../assets/Icons/git-bash.svg';
+import bit from '../../../assets/Icons/bitbucket-svgrepo-com.svg';
+import laragon from '../../../assets/Icons/laragon-svgrepo-com.svg';
+import awsS3 from '../../../assets/Icons/aws-simple-storage-serviCe.svg';
+import { Import } from 'lucide-react';
 
 function Tools() {
     const techs = [
-        {icon: cssIcon,label: "TOOLS",},
-        {icon: gitIcon,label: "Git",},
-        {icon: htmlIcon,label: "HTML",},
-        {icon: jsIcon,label: "JavaScript",},
-        {icon: laravelIcon,label: "Laravel",},
-        {icon: npmIcon,label: "NPM",},
-        {icon: phpIcon,label: "PHP",},
-        {icon: pythonIcon,label: "Python",},
-        {icon: reactIcon,label: "React",},
+        {icon: github,label: "GITHUB",},
+        {icon: gitbash,label: "GITBASH",},
+        {icon: bit,label: "BITBUCKET",},
+        {icon: laragon,label: "LARAGON",},
+        {icon: awsS3,label: "AWS S3",},
     ]
 
     return (

@@ -10,12 +10,12 @@ function TechNav({ category, setCategory }) {
             <ul className='flex justify-center items-center gap-8 font-mono font-medium cursor-pointer'>
                 <li
                     className={`relative cursor-pointer after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[1px] after:bg-primary after:transition-all after:duration-300
-                        ${category === "tech"
+                        ${category === "stack"
                         ? "after:w-full"
                         : "after:w-0"
                         }
                     `}
-                    onClick={() => handleCategory('tech')}>
+                    onClick={() => handleCategory('stack')}>
                     TECH
                 </li>
                 <li className={`relative cursor-pointer after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[1px] after:bg-primary after:transition-all after:duration-300
