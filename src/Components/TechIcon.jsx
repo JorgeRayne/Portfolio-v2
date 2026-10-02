@@ -3,7 +3,7 @@ import React from 'react'
 function TechIcon({img, label}) {
   return (
     <div className=" w-full h-full flex justify-center items-center">
-      <div className="bg-card w-full h-[50%] flex flex-col justify-center items-center rounded-2xl opacity-100">
+      <div className="w-full h-full] flex flex-col justify-center items-center rounded-2xl opacity-100">
         <img
           src={img}
           alt={label}
