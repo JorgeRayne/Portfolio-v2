@@ -5,8 +5,8 @@ import ShapeGrid from './ShapeGrid'
 
 function Main() {
   return (
-    <div className='w-full h-screen bg-background flex justify-center items-center'>
-        <div className='w-full flex justify-around items-center  h-[100%] relative'>
+    <div className='w-full h-screen bg-background flex justify-center items-center relative'>
+        <div className='w-full flex justify-between items-center h-full relative'>
 
             <div
                 className="
@@ -19,21 +19,24 @@ function Main() {
                 <ShapeGrid className="absolute opacity-10" />
             </div>
 
-            <div className='flex justify-around items-center z-10'>
-                <div className='border-4 border-primary flex justify-center item-center relative w-1/4 aspect-square overflow-hidden animate-morph'>
-                <div>
-                    {/* <img className='w-full aspect-square rounded' src={main} alt="" /> */}
-                    <img className='w-full h-full object-cover' src={main} alt="" />
+            <div className='flex justify-center items-center z-10 w-1/2 h-screen '>
+                <div className=' w-3/4 border-4 border-primary flex justify-center item-center relative aspect-square overflow-hidden animate-morph'>
+                    <div>
+                        {/* <img className='w-full aspect-square rounded' src={main} alt="" /> */}
+                        <img className='w-full object-cover' src={main} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className='flex justify-center items-start flex-col w-max p-5'>
-                <h2 className='text-8xl font-extrabold text-primary font-heading font-mono'>Jorge Rayne</h2>
-                <div className='text-6xl font-heading font-extrabold bg-gradient-to-r from-text to-transparent inline-block text-transparent bg-clip-text font-mono'>Fullstack Dev</div>
-                <div>
-                    <IconList/>
+            <div className='flex justify-center items-start flex-col w-1/2 p-5 h-screen'>
+                    <div className='w-full'>
+                        <div className='text-2xl font-heading font-base bg-gradient-to-r from-text to-transparent inline-block text-transparent bg-clip-text font-mono'>Fullstack Developer</div>
+                        <div className='text-text font-mono text-4xl font-medium'>Hello I'm</div>
+                    </div>
+                    <div className='text-6xl font-medium text-primary font-heading font-mono'>Jorge Rayne</div>
+                    <div>
+                        {/* <IconList/> */}
+                    </div>
                 </div>
-            </div>
-            </div>
         </div>
     </div>
   )
