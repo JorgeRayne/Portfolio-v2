@@ -10,7 +10,7 @@ function TechIcon({img, label}) {
           className="w-8 h-8 object-contain"
         />
 
-        <p className="font-mono text-sm text-text">
+        <p className="font-mono text-sm text-text font-medium">
           {label.toUpperCase()}
         </p>
       </div>

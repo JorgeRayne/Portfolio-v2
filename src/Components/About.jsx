@@ -3,10 +3,11 @@ import main from '../assets/laptop.jfif'
 import ShapeGrid from './ShapeGrid'
 import TechNav from './TechNav';
 import Backend from './layouts/techlayouts/Backend';
-import smile from '../assets/smile.svg'
 import me from '../assets/main.png'
-import Frontend from './layouts/techlayouts/Frontend';
-import Tools from './layouts/techlayouts/Tools';
+import Tools from './layouts/techlayouts/Tools';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faSquareFacebook, faSquareThreads } from '@fortawesome/free-brands-svg-icons'
+import js from '../assets/Icons/js.svg';
 
 function About() {
   const [category, setCategory] = useState('stack');
@@ -46,7 +47,7 @@ function About() {
                       <div  className='text-text text-lg lg:text-3xl max-w-96 font-meduim z-10 font-mono'>Developer building clean, reliable cloud, fintech systems</div>
                     </div>
                     <div className='min-h-0 flex-1 px-4 text-ellipsis flex justify-center items-center'>
-                      <div className='indent-10'>
+                      <div className='indent-10 font-medium'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem reprehenderit ab asperiores, est veritatis esse, nam commodi pariatur soluta, dicta dolor quos officia. Id eveniet numquam beatae voluptatum amet.
                         Doloremque eum esse officia voluptates error excepturiLorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem reprehenderit ab 
                       </div>
@@ -79,6 +80,25 @@ function About() {
                   Dowload CV
                 </div> */}
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)] opacity-25" />
+                <div className='w-full h-full absolute flex flex-row-reverse font-mono font-medium'>
+                  <div className='flex justify-center items-center px-6'>
+                    <button className='opacity-80 py-4 px-12 text--card rounded-2xl bg-primary border border-white text-2xl'>Resume</button>
+                  </div>
+                  <div className='w-full flex justify-evenly items-center px-4'>
+                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                      <FontAwesomeIcon className='text-primary h-10 w-6' icon={faSquareFacebook}/>
+                    </div>
+                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                      <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faInstagram}/>
+                    </div>
+                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                      <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faSquareThreads}/>
+                    </div>
+                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                      <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faEnvelope}/>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
