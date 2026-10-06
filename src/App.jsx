@@ -1,9 +1,42 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Header from './Components/Header'
 import Main from './Components/Main'
 import About from './Components/About'
 import Expreince from './Components/Expreince'
 function App() {
+
+  const container = useRef(null);
+
+
+  // const getVisibleSection = (entries) => {
+  //   const visible = entries.find(
+  //     (entry) => entry.isIntersecting
+  //   );
+
+  //   return visible?.target.id;
+  // };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const visible = entry.isIntersecting;
+        if(visible){
+          console.log(entry)
+          console.log(entry.target.id)
+        }
+      });
+    });
+
+    const sections = container.current.children;
+
+    Array.from(sections).forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className='w-full h-screen relative bg-background scroll-smooth'>
@@ -23,14 +56,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center flex-col'>
+      <div className='flex items-center justify-center flex-col gap-4' ref={container}>
         <section id='home' className='w-full'>
-          <Main></Main>
+          <Main/>
         </section>
         <section id='about' className='w-full'>
           <About/>
         </section>
-        <section id='project' className='w-full'>
+        <section id='experience' className='w-full'>
           <Expreince/>
         </section>
       </div>

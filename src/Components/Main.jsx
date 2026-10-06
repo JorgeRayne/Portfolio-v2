@@ -14,6 +14,7 @@ function Main() {
                     bottom-0
                     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
                     [mask-composite:intersect]
+                    overflow-hidden
                 "
                 >
                 <ShapeGrid className="absolute opacity-10" />
