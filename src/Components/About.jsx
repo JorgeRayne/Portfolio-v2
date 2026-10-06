@@ -79,22 +79,22 @@ function About() {
                 {/* <div className='text-text text-lg lg-text-3xl text-center'>
                   Dowload CV
                 </div> */}
-                <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)] opacity-25" />
+                
                 <div className='w-full h-full absolute flex flex-row-reverse font-mono font-medium'>
                   <div className='flex justify-center items-center px-6'>
-                    <button className='opacity-80 py-4 px-12 text--card rounded-2xl bg-primary border border-white text-2xl'>Resume</button>
+                    <button className='opacity-80 py-4 px-12 text--card rounded-2xl bg-primary border border-secondary text-2xl'>Resume</button>
                   </div>
                   <div className='w-full flex justify-evenly items-center px-4'>
-                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                    <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6' icon={faSquareFacebook}/>
                     </div>
-                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                    <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faInstagram}/>
                     </div>
-                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                    <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faSquareThreads}/>
                     </div>
-                    <div className='py-2 px-4 bg-card rounded-2xl'>
+                    <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faEnvelope}/>
                     </div>
                   </div>

@@ -32,9 +32,25 @@ function Main() {
                         <div className='text-2xl font-heading font-base bg-gradient-to-r from-text to-transparent inline-block text-transparent bg-clip-text font-mono'>Fullstack Developer</div>
                         <div className='text-text font-mono text-4xl font-medium'>Hello I'm</div>
                     </div>
-                    <div className='text-6xl font-medium text-primary font-heading font-mono'>Jorge Rayne</div>
-                    <div>
-                        {/* <IconList/> */}
+                    <div className='text-8xl font-bold text-primary font-heading font-mono w-full'>Jorge Rayne</div>
+                    <div className='pl-4 my-5'>
+                        <div className='text-secondary font-mono font-base'>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi similique quaerat reprehenderit illum recusandae placeat voluptatem distinctio nostrum quidem odio magni at, eaque pariatur culpa maiores inventore sit sapiente praesentium.
+                            Illum voluptate molestiae ipsam totam quia quisquam quos sint omnis nesciunt itaque consectetur est, iusto laboriosam, eveniet sunt, quo tempora repellat explicabo laudantium officiis culpa adipisci. Voluptate quidem eveniet quia.
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <div className='flex justify-start items-center gap-5 w-full font-mono text-text'>
+                            <div>
+                                <div className='py-4 px-12 text--card rounded-full bg-card border border-white text-2xl relative'>
+                                    <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)]  rounded-full opacity-25" />
+                                    About me
+                                </div>
+                            </div>
+                            <div>
+                                <button className='opacity-80 py-4 px-12 text--card rounded-full bg-card border border-white text-2xl'>About Me</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </div>
