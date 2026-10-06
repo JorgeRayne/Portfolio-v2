@@ -7,7 +7,13 @@ export default function Header() {
     ]
 
     return (
-        <div className="flex gap-20 w-full justify-center items-center">
+        <div className="w-full flex justify-evenly items-center py-4
+            bg-background/20
+            backdrop-blur-[8px]
+            border border-white/10
+            rounded-full
+            shadow-[0_8px_30px_rgba(0,0,0,0.15)]
+        ">
             {links.map(((link, index) => (
                 <NavLinks key={index} linkTitle={link}/>
             )))}
