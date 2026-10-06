@@ -1,9 +1,9 @@
 import NavLinks from "./Navlinks"
 
-export default function Header() {
+export default function Header({activeSection}) {
 
     const links = [
-        'Home', 'About', 'Experience', 'Project', 'Projects'
+        'Home', 'About', 'Experience', 'Project'
     ]
 
     return (
@@ -15,7 +15,7 @@ export default function Header() {
             shadow-[0_8px_30px_rgba(0,0,0,0.15)]
         ">
             {links.map(((link, index) => (
-                <NavLinks key={index} linkTitle={link}/>
+                <NavLinks key={index} linkTitle={link} activeSection={activeSection}/>
             )))}
         </div>
     )

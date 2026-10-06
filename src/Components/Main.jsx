@@ -3,7 +3,7 @@ import main from '../assets/main.png'
 import IconList from './IconList'
 import ShapeGrid from './ShapeGrid'
 
-function Main() {
+function Main({staggerButton}) {
   return (
     <div className='w-full h-screen bg-background flex justify-center items-center relative'>
         <div className='w-full flex justify-between items-center h-full relative'>
@@ -14,6 +14,7 @@ function Main() {
                     bottom-0
                     [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent),linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]
                     [mask-composite:intersect]
+                    overflow-hidden
                 "
                 >
                 <ShapeGrid className="absolute opacity-10" />
@@ -40,7 +41,7 @@ function Main() {
                         </div>
                     </div>
                     <div className='w-full'>
-                        <div className='flex justify-start items-center gap-5 w-full font-mono text-text'>
+                        <div className='flex justify-start items-center gap-5 w-full font-mono text-text' ref={staggerButton}>
                             <div>
                                 <div className='py-4 px-12 text--card rounded-full bg-card border border-white text-2xl relative'>
                                     <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)]  rounded-full opacity-25" />

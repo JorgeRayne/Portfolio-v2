@@ -40,7 +40,7 @@ function About() {
                   <div className='w-full h-full flex flex-col'>
                     <div className='flex justify-center items-center h-1/2'>
                       <div className='w-1/2 h-full'>
-                        <div className='w-full h-full flex justify-center items-center'>
+                        <div className='w-full h-full flex justify-center items-center overflow-hidden'>
                           <img src={me} className='h-3/4 object-fit' alt="" />
                         </div>
                       </div>
