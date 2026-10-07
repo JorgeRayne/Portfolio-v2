@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import Main from './Components/Main'
 import About from './Components/About'
 import Expreince from './Components/Expreince'
+
 function App() {
 
   const container = useRef(null);
@@ -73,22 +74,22 @@ function App() {
         </div>
       </div>
       <div className='flex items-center justify-center flex-col gap-4' ref={container}>
-        <section id='home' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("home")
+        <section id='home' className={`w-full grid place-items-center content-center transition-all duration-1000 ease-in-out ${visibleSections.has("home")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`}>
           <Main visible={visibleSections.has("home")} staggerButton={staggerButton}/>
         </section>
-        <section id='about' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("about")
+        <section id='about' className={`w-full grid place-items-center content-center transition-all duration-1000 ease-in-out ${visibleSections.has("about")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`}>
-          <About/>
+          <About visible={visibleSections.has("about")}/>
         </section>
-        <section id='experience' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("experience")
+        <section id='experience' className={`w-full grid place-items-center content-center transition-all duration-1000 ease-in-out ${visibleSections.has("experience")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`} >
           <Expreince/>
         </section>
-        <section id='project' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("project")
+        <section id='project' className={`w-full grid place-items-center content-center transition-all duration-1000 ease-out ${visibleSections.has("project")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`}>
           <Main visible={visibleSections.has("project")}/>

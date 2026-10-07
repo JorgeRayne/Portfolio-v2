@@ -9,8 +9,13 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faSquareFacebook, faSquareThreads } from '@fortawesome/free-brands-svg-icons'
 import js from '../assets/Icons/js.svg';
 
-function About() {
+function About({visible}) {
   const [category, setCategory] = useState('stack');
+
+  const socials = [
+    faEnvelope, faInstagram, faSquareFacebook, faSquareThreads
+  ]
+  console.log(socials[0])
 
   return (
   <div className='w-full h-screen flex justify-center items-center bg-background p-10'>
@@ -85,7 +90,7 @@ function About() {
                     <button className='opacity-80 py-4 px-12 text--card rounded-2xl bg-primary border border-secondary text-2xl'>Resume</button>
                   </div>
                   <div className='w-full flex justify-evenly items-center px-4'>
-                    <div className='py-2 px-4 bg-background rounded-2xl'>
+                    {/* <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6' icon={faSquareFacebook}/>
                     </div>
                     <div className='py-2 px-4 bg-background rounded-2xl'>
@@ -96,7 +101,21 @@ function About() {
                     </div>
                     <div className='py-2 px-4 bg-background rounded-2xl'>
                       <FontAwesomeIcon className='text-primary h-10 w-6'  icon={faEnvelope}/>
-                    </div>
+                    </div> */}
+
+
+                    {
+                      socials.map((social, index) => (
+                        <div style={{
+                                transitionDelay: `${index * 200}ms`,
+                                }} className={`py-2 px-4 bg-background rounded-2xl transition-all duration-1000 ${
+                                    visible
+                                    ? "opacity-100 blur-0 translate-x-0"
+                                    : "opacity-0 blur-[5px] -translate-x-[90%]"}`} key={index}>
+                          <FontAwesomeIcon className='text-primary h-10 w-6'  icon={social}/>
+                        </div>
+                      ))
+                    }
                   </div>
                 </div>
               </div>
