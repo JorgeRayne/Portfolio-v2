@@ -3,7 +3,7 @@ import main from '../assets/main.png'
 import IconList from './IconList'
 import ShapeGrid from './ShapeGrid'
 
-function Main({staggerButton}) {
+function Main({staggerButton, visible}) {
   return (
     <div className='w-full h-screen bg-background flex justify-center items-center relative'>
         <div className='w-full flex justify-between items-center h-full relative'>
@@ -23,7 +23,6 @@ function Main({staggerButton}) {
             <div className='flex justify-center items-center z-10 w-1/2 h-screen '>
                 <div className=' w-3/4 border-4 border-primary flex justify-center item-center relative aspect-square overflow-hidden animate-morph'>
                     <div>
-                        {/* <img className='w-full aspect-square rounded' src={main} alt="" /> */}
                         <img className='w-full object-cover' src={main} alt="" />
                     </div>
                 </div>
@@ -41,16 +40,31 @@ function Main({staggerButton}) {
                         </div>
                     </div>
                     <div className='w-full'>
-                        <div className='flex justify-start items-center gap-5 w-full font-mono text-text' ref={staggerButton}>
-                            <div>
-                                <div className='py-4 px-12 text--card rounded-full bg-card border border-white text-2xl relative'>
-                                    <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)]  rounded-full opacity-25" />
-                                    About me
-                                </div>
+                        <div className='flex justify-start items-center gap-5 w-full font-mono text-text'>
+                            {["About me", "About Me"].map((text, index) => (
+                            <div
+                                key={text}
+                                style={{
+                                transitionDelay: `${index * 200}ms`,
+                                }}
+                                className={`
+                                transition-all
+                                duration-1000
+                                py-4 px-12 text--card rounded-full bg-card border border-white text-2xl relative
+                                ${
+                                    visible
+                                    ? "opacity-100 blur-0 translate-x-0"
+                                    : "opacity-0 blur-[5px] -translate-x-[90%]"
+                                }
+                                `}
+                            >
+                                {
+                                    index == 0 && (<div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)]  rounded-full opacity-25" />)
+
+                                }
+                                {text}
                             </div>
-                            <div>
-                                <button className='opacity-80 py-4 px-12 text--card rounded-full bg-card border border-white text-2xl'>About Me</button>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
