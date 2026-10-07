@@ -10,8 +10,6 @@ function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [visibleSections, setVisibleSections] = useState(new Set());
 
-
-  console.log(staggerButton.current?.children[0])
   useEffect(() => {
     const ratios = new Map();
 
@@ -78,7 +76,7 @@ function App() {
         <section id='home' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("home")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`}>
-          <Main staggerButton={staggerButton}/>
+          <Main visible={visibleSections.has("home")} staggerButton={staggerButton}/>
         </section>
         <section id='about' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("about")
           ? "opacity-100 blur-0 translate-x-0"
@@ -93,7 +91,7 @@ function App() {
         <section id='project' className={`w-full grid place-items-center content-center transition-all duration-1000 ${visibleSections.has("project")
           ? "opacity-100 blur-0 translate-x-0"
           : "opacity-0 blur-[5px] -translate-x-[90%]"}`}>
-          <Main/>
+          <Main visible={visibleSections.has("project")}/>
         </section>
       </div>
     </div>
