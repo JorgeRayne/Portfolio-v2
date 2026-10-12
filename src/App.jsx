@@ -59,8 +59,7 @@ function App() {
   return (
     <div className='w-full h-screen relative bg-background scroll-smooth'>
       <div className='fixed top-4 w-full z-50 px-4'>
-        <div className='w-full h-full flex justify-between items-center py-4 px-6
-        '>
+        <div className='w-full h-full flex justify-between items-center py-4 px-6'>
           <div className='w-full flex justify-start items-center'>
             <div className='text-4xl font-semibold font-mono text-text'>
               JORGE<span className='text-primary'>/</span>
@@ -68,8 +67,14 @@ function App() {
           </div>
           <Header activeSection={activeSection}/>
           <div className='w-full flex justify-end items-center'>
-            <div className='text-4xl font-semibold font-mono text-text'>
-              JORGE<span className='text-primary'>/</span>
+            {/* <div className='px-10 text-center py-4 bg-background/20 backdrop-blur-[8px] border border-primary rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.15)]'> */}
+            <div className=''>
+              <button className='relative rounded-'>
+                <div className='absolute inset-0 before:content-[""] before:absolute before:inset-0 before:bg-[conic-gradient(from_var(--rotate),transparent_0%,theme(colors.primary)_5%,transparent_10%)] before:animate-[rotate_2s_linear_infinite] before:rounded-full after:content-[""] after:absolute after:inset-[2px] after:bg-card after:rounded-full'></div>
+                <div className='px-10 text-center py-4 rounded-full relative'>
+                  <p className='font-medium text-primary font-mono'>Resume</p>
+                </div>
+              </button>
             </div>
           </div>
         </div>

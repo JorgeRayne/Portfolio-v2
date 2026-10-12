@@ -82,7 +82,7 @@ function About({visible}) {
                     <TechNav category={category} setCategory={setCategory} />
                   </div>
                   <div className={`grid ${category == 'stack' ? 'grid-rows-3 grid-cols-5' : 'grid-cols-3'} gap-3 w-full h-full bg-background opacity-80 rounded-3xl px-10 py-4`}>
-                    {category === 'stack' ? <Backend></Backend> : <Tools></Tools>}
+                    {category === 'stack' ? <Backend/> : <Tools/>}
                   </div>
                 </div>
               </div>
