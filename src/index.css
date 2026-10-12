@@ -7,6 +7,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotate {
+  to {
+    --rotate: 360deg;
+  }
+}
+
 @font-face {
   font-family: "JetBrains Mono";
   src: url("./assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
@@ -61,6 +73,7 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0)
+    --radius: 16px;
   }
   .dark {
     --background: oklch(0.145 0 0);
