@@ -1,13 +1,14 @@
-import React, { useRef, useState } from 'react'
-import main from '../assets/laptop.jfif'
+import React, {useState } from 'react'
+import main from '../assets/78c10aa0f2fe42a646651e12363c6186.jpg'
 import ShapeGrid from './ShapeGrid'
 import TechNav from './TechNav';
 import Backend from './layouts/techlayouts/Backend';
-import me from '../assets/main.png'
 import Tools from './layouts/techlayouts/Tools';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faSquareFacebook, faSquareThreads } from '@fortawesome/free-brands-svg-icons'
-import js from '../assets/Icons/js.svg';
+import { Mascot } from 'page-mascot';
+import direction from '../assets/mascot/fox-pixel-directions.webp'
+import reaction from '../assets/mascot/fox-pixel-reactions.webp'
 
 function About({visible}) {
   const [category, setCategory] = useState('stack');
@@ -30,7 +31,7 @@ function About({visible}) {
               gap-8
             ">
               <div className='[grid-area:ben1] overflow-hidden rounded-3xl bg-card border border-white/[0.1] relative'>
-                <img src={main} className='w-full h-full object-cover object-right-bottom opacity-10 absolute' alt="" />
+                <img src={main} className='w-full h-full object-cover object-right-center opacity-50 absolute' alt="" />
                 <div className='justify-end group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col p-5 lg:p-10'>
                   <div className="font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10"></div>
                   <div className="text-text text-lg lg:text-3xl max-w-96 font-meduim z-10 font-mono">
@@ -39,14 +40,19 @@ function About({visible}) {
                 </div>
               </div>
               <div className="relative z-0 [grid-area:ben2] w-full overflow-hidden rounded-3xl border border-white/[0.1] bg-background">
-                {/* <div className="absolute inset-0 z-0 bg-[linear-gradient(90deg,#2A7B9B_0%,#57E6D9_0%,#000_100%)] opacity-25" /> */}
 
                 <div className="relative z-10 h-full w-full text-text font-mono ">
                   <div className='w-full h-full flex flex-col'>
                     <div className='flex justify-center items-center h-1/2'>
                       <div className='w-1/2 h-full'>
                         <div className='w-full h-full flex justify-center items-center overflow-hidden'>
-                          <img src={me} className='h-3/4 object-fit' alt="" />
+                          {/* <img src={me} className='h-3/4 object-fit' alt="" /> */}
+                          <Mascot
+                            size={200}
+                            label="fox-pixel"
+                            directions={direction}
+                            reactions={reaction}
+                          />
                         </div>
                       </div>
                       <div  className='text-text text-lg lg:text-3xl max-w-96 font-meduim z-10 font-mono'>Developer building clean, reliable cloud, fintech systems</div>
